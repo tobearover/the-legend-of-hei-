@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="../css/general.css" rel="stylesheet" />
+    <link href="../css/people.css" rel="stylesheet" />
+    <link href="../css/media.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <script src="js/script.js" defer></script>
+    <title>罗小黑战记(The legend of Hei)--人物简介1</title>
+  </head>
+  <body>
+    <div class="background-img"></div>
+
+    <header class="header">
+      <img
+        src="img/2017_Solar_Term_7_-_Start_of_Summer-modified.png"
+        class="logo"
+        alt="Hei"
+      />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="index.html" class="nav-link">首页</a></li>
+          <li><a href="people.html" class="nav-link">人物简介</a></li>
+          <li><a href="media.html" class="nav-link">媒体资源</a></li>
+          <li><a href="gallery.html" class="nav-link">图画艺术</a></li>
+          <li id="auth-item">
+            <!-- 这里会根据登录状态动态显示 -->
+            <a href="regis.html" class="nav-link nav-cta" id="auth-link"
+              >登录</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="user-info hidden" id="user-info">
+        <div class="user-avatar" id="user-avatar"></div>
+        <span id="user-name"></span>
+        <a href="#" id="logout-link" class="subheading">退出</a>
+      </div>
+    </header>
+
+    <!-- 背景图片区 -->
+    <div class="background-img"></div>
+    <!-- 中间内容区域 -->
+    <div class="container">
+      <section class="section-people">
+        <div class="flex-container">
+          <!--左侧导航区域-->
+          <div class="side-nav container-l">
+            <div class="side-nav-header">
+              <h1 class="heading-primary">罗小黑战记</h1>
+            </div>
+
+            <!-- <div class="search-box">
+            <input type="text" placeholder="搜索人物..." />
+          </div> -->
+
+            <ul class="accordion">
+              <li class="accordion-item">
+                <div class="accordion-header active">
+                  <span>罗小黑战记1</span>
+                  <!--右箭头标  -->
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="accordion-content show">
+                  <ul class="character-list">
+                    <li class="active" data-target="xiaohei">小黑</li>
+                    <li data-target="wuxian">无限</li>
+                    <li data-target="fengxi">风息</li>
+                    <li data-target="nezha">哪吒</li>
+                    <li data-target="panjing">潘靖</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <div class="accordion-header">
+                  <span>罗小黑战记2</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="accordion-content">
+                  <ul class="character-list">
+                    <li data-target="xiaobai">小黑</li>
+                    <li data-target="luye">鹿野</li>
+                    <li data-target="wuxian">无限</li>
+                    <li data-target="chinian">池年</li>
+                    <li data-target="lingyao">灵遥</li>
+                    <li data-target="ximuzi">西木子</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <div class="accordion-header">
+                  <span>罗小黑战记</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="accordion-content">
+                  <ul class="character-list">
+                    <li data-target="luobai">罗小白</li>
+                    <li data-target="agen">阿根</li>
+                    <li data-target="shanxin">山新</li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="accordion-item">
+                <div class="accordion-header">
+                  <span>蓝溪镇</span>
+                  <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="accordion-content">
+                  <ul class="character-list">
+                    <li data-target="laojun">老君</li>
+                    <li data-target="qingning">清凝</li>
+                    <li data-target="xuanli">玄离</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="main container-r">
+            <!-- 小黑 -->
+            <div class="character-card active" id="xiaohei">
+              <div class="character-header">
+                <img
+                  src="character/Luo_Xiaohei_Profile1.webp"
+                  alt="小黑的图片Hei"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">小黑</h2>
+                  <div class="character-alias">别名: 罗小黑 / 嘿咻</div>
+                  <div class="character-tags">
+                    <span class="tag">猫妖</span>
+                    <span class="tag">领域控制</span>
+                    <span class="tag">空间系</span>
+                    <span class="tag">金属系</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p>
+                  小黑是一只通体漆黑的小猫，看似普通，实则为一只强大的猫妖。他拥有控制"领域"的能力，能够在一定范围内控制金属等物质。因为家园被破坏，他开始对人类抱有敌意。
+                </p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p>
+                  罗小黑诞生在2011年，是主角，原型是导演曾养过的一只黑猫
+                  师从无限，不会识字。因盗取老君天明珠而被谛听打回原形。躲入纸箱中避雨误被罗小白捡回家，取名罗小黑。
+                  通体漆黑，耳朵内绿色，舌头蓝色。善良，亲近人类。
+                  罗小黑是已知的唯一一个既拥有双灵质空间又拥有双空间系能力的妖精。
+                </p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>领域控制</h4>
+                    <p>
+                      在小黑周围一定范围内，可以控制金属等物质，形成强大的攻防能力。
+                    </p>
+                  </div>
+                  <div class="ability">
+                    <h4>空间传送</h4>
+                    <p>能够进行短距离的空间传送，是逃脱和突袭的绝佳能力。</p>
+                  </div>
+                  <div class="ability">
+                    <h4>变形能力</h4>
+                    <p>
+                      可以在猫形和人形之间自由转换，人形状态下是一个黑发小男孩。
+                    </p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p>
+                    小黑的尾巴，可多次分裂，
+                    通常分裂成4个嘿咻，最多可以分裂成无数个（见27集《这是什么滋味》），
+                    但总体积不变。与小黑相似，单独的有意识体，可自己思考，但总体智商不高。
+                  </p>
+                  <p>
+                    小黑的性格从最初对人类怀有敌意，逐渐转变为理解并接纳人类。他虽然外表冷酷，但内心温暖，重视友情和归属感。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- 无限 -->
+            <div class="character-card" id="wuxian">
+              <div class="character-header">
+                <img
+                  src="character/Wuxian_Profile_1.webp"
+                  alt="无限的图片Wuxian"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">无限</h2>
+                  <div class="character-alias">别名：“年号大人”</div>
+                  <div class="character-tags">
+                    <span class="tag">人类</span>
+                    <span class="tag">空间系</span>
+                    <span class="tag">金属系</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p>
+                  无限有一双蓝色的眼睛和扎成低马尾辫的藏蓝色长发。
+                  在古代，人们看到他穿着宽松的汉服，深蓝色的高领，浅蓝色的外袍。
+                  在现代，他的双臂上缠绕着金属，呈护腕的形状，他的衣服有白色和蓝色的配色方案。
+                </p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p>
+                  贯穿主线的人物。会馆最强执行者，小黑和鹿野的师父，已封神。
+                  不常显露，但其表情实内心感情丰富。
+                  因人类的身份及从前与会馆一些妖精有过摩擦而不太受欢迎。
+                  让小黑前往老君山盗取天明珠，与老君是旧相识。
+                </p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>金属系</h4>
+                    <p>
+                      无限能够操纵所有类型的金属，他最终将其教给了小黑和鹿野。
+                    </p>
+                  </div>
+                  <div class="ability">
+                    <h4>“吞”</h4>
+                    <p>
+                      通过“吞噬”能力，无羡能够制造出大洞，“吞噬”周围的所有物体/材料。
+                    </p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p>
+                    在动画中，他是罗小黑的温柔师傅和父亲形象，他的能力极其强大。
+                  </p>
+                  <p>
+                    无限举止平静，最初被视为冷漠和没有同情心。
+                    然而，他的关怀本性在影片后期显露出来，当罗小黑和鹿野受到威胁时，他强烈保护的一面就显露出来了。
+                    他不会绝对地定义好与坏，是与非，而是教小黑与鹿野自我判断成长。
+                  </p>
+                  <p>无限做饭难吃，但是依然大胆试错。</p>
+                </div>
+              </div>
+            </div>
+            <!-- 风息 -->
+            <div class="character-card" id="fengxi">
+              <div class="character-header">
+                <img
+                  src="character/Fengxi_Profile.webp"
+                  alt="风息的图片fengxi"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">风息</h2>
+                  <div class="character-tags">
+                    <span class="tag">妖精</span>
+                    <span class="tag">木系</span>
+                    <span class="tag">灵系</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p>
+                  在人形中，凤溪有紫色的眼睛和尖尖的耳朵。
+                  他蓬松的紫色长发披在一只眼睛上，两簇从后脑勺伸出来。
+                  他穿着一件经过改造的紫色汉服，黑色袖子，黑色裤子，黑色鞋子，白色袜子。
+                  当他变成真形时，他变成了一只长着长鬃毛的黑豹。
+                </p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p>
+                  风息和朋友们在一片森林里安静地生活着，直到该地区被人类工业化所破坏，森林变成了龙游城。
+                  从此，风息憎恨人类，为夺回人类的土地而战。
+                  这使他成为精灵公会的敌人，精灵公会是一个致力于与人类和平共处的团体。
+                  在风息偷走了小黑的领地，并试图用它来控制龙游城后，风息被小黑和无限阻止了。
+                  最终被俘虏的风息决定结束自己的生命，并将自己变成了他在市中心创造的一片茂密的森林。
+                </p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>木系</h4>
+                    <p>他能够纵木材，控制树木的生长。</p>
+                  </div>
+                  <div class="ability">
+                    <h4>抢夺</h4>
+                    <p>
+                      拥有抢夺能力，能够强行夺取其他灵魂的力量（在电影中体现）。他的灵体形态是一只黑豹。
+                    </p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p>
+                    风息很善良，对小黑很提防。他具有保护欲，毫不犹豫地保护他免受人类的侵害。
+                  </p>
+                  <p>
+                    风息站在妖精会馆的反面，主张妖精独大，所以选择了利用极端方法解决问题。他固执骄傲，但是也是善良美好的。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 哪吒 -->
+            <div class="character-card" id="nezha">
+              <div class="character-header">
+                <img
+                  src="character/Nezha.webp"
+                  alt="哪吒的图片nezha"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">哪吒</h2>
+                  <div class="character-tags">
+                    <span class="tag">神仙</span>
+                    <span class="tag">御灵系--火</span>
+                    <span class="tag">锁灵系--灵卸</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p>
+                  哪吒的外貌像一个小男孩， 留着直刘海和中等长度的头发。
+                  他最显着的特征是他的双发髻，
+                  这让他在不认识他的人看来像个女孩，但如果他摘下发髻，让认识他的人认不出他。他穿着一件黑白夹克，黑色紧身裤外面套着迷彩短裤，还有一件印有
+                  NAZA 字样的衬衫。他的脖子上有一个黑色的项圈。
+                  他的浑天带在不使用时表现为红色臂章。
+                </p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p>
+                  他是精灵公会的执行人。 他是一位被授予神封号的不朽精灵，
+                  是人类文学和民间宗教中的杰出人物。 与老君、炎明、炎帝一起，
+                  是创立精灵行会的四大神祇之一。
+                </p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>御灵系--火</h4>
+                    <p>
+                      他可以在战斗中制造和利用火。
+                      当他被激怒时，他似乎也会燃烧起来
+                    </p>
+                  </div>
+                  <div class="ability">
+                    <h4>风火轮</h4>
+                    <p>
+                      他能够在风火轮的帮助下飞行， 风火轮是他的乾坤戒指的迭代，
+                      附在他的脚两侧。
+                    </p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p>
+                    他是保护神哪吒的虚构版本。 然而，与神话中的哪吒不同，
+                    这个版本的哪吒是一个精灵，
+                    因此诞生于生物和物质灵魂的聚集，而不是像他原著故事中那样由李靖司令和尹夫人所生。
+                  </p>
+                  <p>
+                    性格火爆急躁，有些冲动。但是可以总览大局，
+                    遇到事情也有不失冷静的一面。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 潘靖-->
+            <div class="character-card" id="panjing">
+              <div class="character-header">
+                <img
+                  src="character/Panjing_in_the_movie.webp"
+                  alt="潘靖的图片panjing"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">潘靖</h2>
+                  <div class="character-tags">
+                    <span class="tag">妖精</span>
+                    <span class="tag">心灵感应</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p>
+                  人类形象为长者留着黑色短发，带有灰色条纹，
+                  戴着眼镜，拄着拐杖。
+                  真实形态是一只白色的五尾猫头鹰，周围环绕着一个黄色的锯齿形环，在飞行过程中会破裂。
+                </p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p>
+                  他曾经是燕国的国师，燕国战败，被邢国取代。
+                  在他为复仇而刺杀黄帝的企图被挫败后，老君将他收归麾下。
+                  现在是龙游精灵公会的公会长。
+                </p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>心灵感应</h4>
+                    <p>
+                      他有能力与公会成员集体交谈，在风息袭击期间通过心灵感应向龙游城各地的执行者发出指令。
+                    </p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p>
+                    潘靖忠心耿耿，为他不惧危险所侍奉的旧主人报仇。
+                    在危机时刻，他能够做出冷静和迅速的决定，一旦了解情况就接管指挥权。
+                    他很容易被夏夫人弄得慌乱。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 鹿野 -->
+            <div class="character-card" id="luye">
+              <div class="character-header">
+                <img
+                  src="character/Luye.webp"
+                  alt="鹿野的图片luye"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">鹿野</h2>
+                  <div class="character-alias">“关门弟子”</div>
+                  <div class="character-tags">
+                    <span class="tag">感知组组长</span>
+                    <span class="tag">御灵系--金</span>
+                    <span class="tag">生灵系--追毫</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p>
+                  灰发灰瞳的女性妖精，平时身穿蓝色外套和白色长裤，
+                  脚踏蓝灰色长靴。性格复杂且多面。
+                  她高冷酷拽，展现出强大的战斗力和果断的决策能力。
+                  她也有逗趣可爱的一面，带有典型的“罗小黑”式冷幽默。
+                </p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p>
+                  作为无限门下关门弟子和小黑的师姐，
+                  幼年因人类战争失去家园导致创伤后应激障碍，
+                  为复仇主动拜师学艺。现在担任妖灵会馆感知组组长，
+                  兼具御灵系金属性与生灵系追毫能力。
+                </p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>御灵系--金</h4>
+                    <p>
+                      擅长使用绳索和刀刃等武器，能够运用控制金属的能力保护住坠落的客机
+                    </p>
+                  </div>
+                  <div class="ability">
+                    <h4>生灵系-追毫</h4>
+                    <p>利于超强的感知灵的能力追踪勘察。</p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p>
+                    战争带来的创伤令她对外界有一定的疏离与冷漠。
+                    幼年的创伤在岁月长河中被慢慢疗愈，
+                    在遇到师弟罗小黑后，主动走出阴霾并与自己和解。
+                  </p>
+                  <p>
+                    作为会馆中为数不多的女性组长，精神内核稳定，
+                    理性而独立，但也不时流露出对后辈的关怀。
+                  </p>
+                  <p>
+                    该角色通过东方情感表达方式展现隐忍特质，
+                    结尾通过“师父你有空看看我”传递情感。
+                    作为小黑的“对照组”，鹿野用不同视角探讨人妖关系，
+                    其复杂性格成为影片世界观的拓展支点
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 池年 -->
+            <div class="character-card" id="chinian">
+              <div class="character-header">
+                <img
+                  src="character/Chinian.webp"
+                  alt="池年的图片chinian"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">池年</h2>
+                  <div class="character-alias">会馆长老</div>
+                  <div class="character-tags">
+                    <span class="tag"></span>
+                    <span class="tag">御灵系--木</span>
+                    <span class="tag"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p></p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p></p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>御灵系--木</h4>
+                    <p></p>
+                  </div>
+                  <div class="ability">
+                    <h4></h4>
+                    <p></p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 灵瑶 -->
+            <div class="character-card" id="lingyao">
+              <div class="character-header">
+                <img
+                  src="character/Lingyao.webp"
+                  alt="灵瑶的图片lingyao"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">灵瑶</h2>
+                  <div class="character-alias">“关门弟子”</div>
+                  <div class="character-tags">
+                    <span class="tag">会馆长老</span>
+                    <span class="tag"></span>
+                    <span class="tag"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p></p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p></p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4></h4>
+                    <p>
+                      擅长使用绳索和刀刃等武器，能够运用控制金属的能力保护住坠落的客机
+                    </p>
+                  </div>
+                  <div class="ability">
+                    <h4>生灵系-追毫</h4>
+                    <p>利于超强的感知灵的能力追踪勘察。</p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ximuzi -->
+            <div class="character-card" id="ximuzi">
+              <div class="character-header">
+                <img
+                  src="character/Ximuzi.webp"
+                  alt="西木子的图片ximuzi"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">西木子</h2>
+                  <div class="character-alias">“关门弟子”</div>
+                  <div class="character-tags">
+                    <span class="tag">会馆</span>
+                    <span class="tag">御灵系--金</span>
+                    <span class="tag">生灵系--追毫</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p></p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p></p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>御灵系--金</h4>
+                    <p></p>
+                  </div>
+                  <div class="ability">
+                    <h4>生灵系-追毫</h4>
+                    <p></p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 罗小白 -->
+            <div class="character-card" id="luobai">
+              <div class="character-header">
+                <img
+                  src="character/罗小白（妖灵簿）.webp"
+                  alt="小白的图片xiaobai"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">罗小白</h2>
+                  <div class="character-alias">善良美好</div>
+                  <div class="character-tags">
+                    <span class="tag">人类</span>
+                    <span class="tag"></span>
+                    <span class="tag"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p>
+                  一名红领巾，善良正义，
+                  天然活泼以致有些许冒失，在踩雷怼人方面很有一手。
+                </p>
+                <h3 class="section-title">角色背景</h3>
+                <p>
+                  小白活泼善良，骨子里又十分温柔，
+                  与当年的清凝仙子在性格上相像，和热爱ACG的老君十分投缘甚至得到了他赠送的顶级空间法宝蓝玉盘，
+                  可以进入老君的灵质空间，
+                </p>
+                <h3 class="section-title">补充</h3>
+                <div class="add"></div>
+              </div>
+            </div>
+
+            <!-- 阿根 -->
+            <div class="character-card" id="agen">
+              <div class="character-header">
+                <img
+                  src="character/Luye.webp"
+                  alt="鹿野的图片luye"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">鹿野</h2>
+                  <div class="character-alias">“关门弟子”</div>
+                  <div class="character-tags">
+                    <span class="tag">感知组组长</span>
+                    <span class="tag">御灵系--金</span>
+                    <span class="tag">生灵系--追毫</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p>
+                  灰发灰瞳的女性妖精，平时身穿蓝色外套和白色长裤，
+                  脚踏蓝灰色长靴。性格复杂且多面。
+                  她高冷酷拽，展现出强大的战斗力和果断的决策能力。
+                  她也有逗趣可爱的一面，带有典型的“罗小黑”式冷幽默。
+                </p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p>
+                  作为无限门下关门弟子和小黑的师姐，
+                  幼年因人类战争失去家园导致创伤后应激障碍，
+                  为复仇主动拜师学艺。现在担任妖灵会馆感知组组长，
+                  兼具御灵系金属性与生灵系追毫能力。
+                </p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>御灵系--金</h4>
+                    <p>
+                      擅长使用绳索和刀刃等武器，能够运用控制金属的能力保护住坠落的客机
+                    </p>
+                  </div>
+                  <div class="ability">
+                    <h4>生灵系-追毫</h4>
+                    <p>利于超强的感知灵的能力追踪勘察。</p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p>
+                    战争带来的创伤令她对外界有一定的疏离与冷漠。
+                    幼年的创伤在岁月长河中被慢慢疗愈，
+                    在遇到师弟罗小黑后，主动走出阴霾并与自己和解。
+                  </p>
+                  <p>
+                    作为会馆中为数不多的女性组长，精神内核稳定，
+                    理性而独立，但也不时流露出对后辈的关怀。
+                  </p>
+                  <p>
+                    该角色通过东方情感表达方式展现隐忍特质，
+                    结尾通过“师父你有空看看我”传递情感。
+                    作为小黑的“对照组”，鹿野用不同视角探讨人妖关系，
+                    其复杂性格成为影片世界观的拓展支点
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 山新 -->
+            <div class="character-card" id="shanxin">
+              <div class="character-header">
+                <img
+                  src="character/Luye.webp"
+                  alt="鹿野的图片luye"
+                  class="character-img"
+                />
+                <div class="character-info">
+                  <h2 class="character-name">鹿野</h2>
+                  <div class="character-alias">“关门弟子”</div>
+                  <div class="character-tags">
+                    <span class="tag">感知组组长</span>
+                    <span class="tag">御灵系--金</span>
+                    <span class="tag">生灵系--追毫</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="character-desc">
+                <p>
+                  灰发灰瞳的女性妖精，平时身穿蓝色外套和白色长裤，
+                  脚踏蓝灰色长靴。性格复杂且多面。
+                  她高冷酷拽，展现出强大的战斗力和果断的决策能力。
+                  她也有逗趣可爱的一面，带有典型的“罗小黑”式冷幽默。
+                </p>
+
+                <h3 class="section-title">角色背景</h3>
+                <p>
+                  作为无限门下关门弟子和小黑的师姐，
+                  幼年因人类战争失去家园导致创伤后应激障碍，
+                  为复仇主动拜师学艺。现在担任妖灵会馆感知组组长，
+                  兼具御灵系金属性与生灵系追毫能力。
+                </p>
+
+                <h3 class="section-title">能力特点</h3>
+                <div class="abilities">
+                  <div class="ability">
+                    <h4>御灵系--金</h4>
+                    <p>
+                      擅长使用绳索和刀刃等武器，能够运用控制金属的能力保护住坠落的客机
+                    </p>
+                  </div>
+                  <div class="ability">
+                    <h4>生灵系-追毫</h4>
+                    <p>利于超强的感知灵的能力追踪勘察。</p>
+                  </div>
+                </div>
+
+                <h3 class="section-title">补充</h3>
+                <div class="add">
+                  <p>
+                    战争带来的创伤令她对外界有一定的疏离与冷漠。
+                    幼年的创伤在岁月长河中被慢慢疗愈，
+                    在遇到师弟罗小黑后，主动走出阴霾并与自己和解。
+                  </p>
+                  <p>
+                    作为会馆中为数不多的女性组长，精神内核稳定，
+                    理性而独立，但也不时流露出对后辈的关怀。
+                  </p>
+                  <p>
+                    该角色通过东方情感表达方式展现隐忍特质，
+                    结尾通过“师父你有空看看我”传递情感。
+                    作为小黑的“对照组”，鹿野用不同视角探讨人妖关系，
+                    其复杂性格成为影片世界观的拓展支点
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="section-container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="罗小黑战记logo" src="logo/Logo.webp" />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-android"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-wechat"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; 2025 by 罗小黑战记,LFF All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">联系我们</p>
+          <address class="contacts">
+            <p class="address">妖灵会馆总部</p>
+            <p class="address">
+              资料均选自罗小黑维基和百度，如有错误请联系指出，感谢纠正指导。
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">+86 101 101 1011</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@luo-xiaohei.com"
+                >hello@luo-xiaohei.com</a
+              >
+            </p>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

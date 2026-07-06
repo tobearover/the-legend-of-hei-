@@ -1,0 +1,91 @@
+<!-- 高燃剪辑部分 -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="../css/general.css" rel="stylesheet" />
+    <link href="../css/people.css" rel="stylesheet" />
+    <link href="../css/media.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <script src="js/script.js" defer></script>
+    <title>罗小黑战记(The legend of Hei)--人物简介1</title>
+  </head>
+  <body>
+    <div class="background-img"></div>
+
+    <header class="header">
+      <img
+        src="img/2017_Solar_Term_7_-_Start_of_Summer-modified.png"
+        class="logo"
+        alt="Hei"
+      />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="index.html" class="nav-link">首页</a></li>
+          <li><a href="people.html" class="nav-link">人物简介</a></li>
+          <li><a href="media.html" class="nav-link">媒体资源</a></li>
+          <li><a href="gallery.html" class="nav-link">图画艺术</a></li>
+          <li id="auth-item">
+            <!-- 这里会根据登录状态动态显示 -->
+            <a href="regis.html" class="nav-link nav-cta" id="auth-link"
+              >登录</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="user-info hidden" id="user-info">
+        <div class="user-avatar" id="user-avatar"></div>
+        <span id="user-name"></span>
+        <a href="#" id="logout-link" class="subheading">退出</a>
+      </div>
+    </header>
+
+    <!-- 背景图片区 -->
+    <div class="background-img"></div>
+    <!-- 中间内容区域 -->
+    <div class="container">
+      <section class="section-people">
+        <div class="flex-container">
+          <!--左侧导航区域-->
+          <div class="side-nav container-l">
+            <div class="side-nav-header">
+              <h1 class="heading-primary">罗小黑战记</h1>
+            </div>
+          </div>
+          <!-- 右侧资源区 -->
+          <div class="container-r">
+            <h2 class="heading-secondary">高燃剪辑</h2>
+            <div class="media-grid">
+              <div class="media-item>
+              <a
+                href="https://www.bilibili.com/video/BV1rK4y1r7mD?spm_id_from=333.1007.partition_rank.content.click"
+                target="_blank"
+                ><img
+                  src="img/高燃剪辑1.png"
+                  alt="高燃剪辑1"
+                  class="media-thumbnail"
+              /></a>
+              <h3 class="media-title">罗小黑战记：高燃剪辑</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

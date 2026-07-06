@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-dark: #45260a;
+  --form-bg: #f1f8f1;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background: linear-gradient(
+    to right bottom,
+    var(--primary-light),
+    var(--primary-color)
+  );
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  overflow: hidden;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(125, 196, 125, 0.5),
+      rgba(13, 107, 13, 0.5)
+    ),
+    url("character/regis.jpg");
+  background-size: cover;
+  width: 100%;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: var(--text-dark);
+}
+
+.heading-secondary {
+  text-align: center;
+  color: var(--text-dark);
+  margin-bottom: 3.2rem;
+  margin-top: 3.2rem;
+}
+
+.cta-text {
+  color: var(--text-dark);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  display: inline-block;
+  padding: 0 3.2rem;
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  margin-bottom: 3.2rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #333;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2.4rem;
+  padding: 0 2.4rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: none;
+  color: inherit;
+  background-color: var(--form-bg);
+  border-radius: 9px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta-form input:focus,
+.cta-form select:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: var(--primary-dark);
+  color: white;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: var(--text-dark);
+}
+
+.form-switch {
+  text-align: center;
+  margin-top: 2.4rem;
+  font-size: 1.6rem;
+}
+
+.form-switch a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-switch a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+  display: none;
+}

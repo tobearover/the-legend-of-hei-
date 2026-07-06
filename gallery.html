@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<link>
+ <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+     <!--链接css文件和html文件-->
+ <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/gallery.css" rel="stylesheet">
+    <link href="../css/general.css" rel="stylesheet">
+    <link href="../css/media.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <script src="js/script.js" defer ></script>
+
+    <title>罗小黑战记(The legend of Hei)</title>
+</head>
+<!--导航栏-->
+<header class="header ">
+      <img src="img/2017_Solar_Term_7_-_Start_of_Summer-modified.png" class="logo" alt="Hei" />
+      <nav class="main-nav">
+        <ul class=" main-nav-list   ">
+          <li><a href="index.html" class="nav-link">首页</a></li>
+          <li><a href="people.html" class="nav-link">人物简介</a></li>
+          <li><a href="media.html" class="nav-link">媒体资源</a></li>
+          <li><a href="gallery.html"       class="nav-link">图画艺术</a></li>
+            <li id="auth-item">
+            <!-- 这里会根据登录状态动态显示 -->
+            <a href="regis.html" class="nav-link nav-cta" id="auth-link" >登录</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-info hidden" id="user-info">
+        <div class="user-avatar" id="user-avatar"></div>
+        <span id="user-name"></span>
+        <a href="#" id="logout-link" class="subheading">退出</a>
+      </div>
+    </header>
+    <div class="background-img"></div>
+    <div class="container">
+
+    <section class="section-gallery">
+      <!-- 设置 -->
+       <div class="flex-container   gallery-container">
+        <div class="gallery1  "> 
+          <h2 class="heading-secondary text-c">节气图 </h2>
+          <div class="gallery-items grid grid--4--cols">
+            <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_1_-_Start_of_Spring.webp" alt="立春">
+             </figure>
+              <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_2_-_Rain_Water.webp" alt="雨水">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_3_-_Awakening_of_Insects.webp" alt="惊蛰">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_4_-_Spring_Equinox.webp" alt="春分">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_5_-_Clear_and_Bright.webp" alt="清明">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_6_-_Grain_Rain.webp" alt="谷雨">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_7_-_Start_of_Summer.webp" alt="立夏">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_8_-_Lesser_Fullness_of_Grain.webp" alt="小满">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_9_-_Grain_in_Ear.webp" alt="芒种">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_10_-_Summer_Solstice.webp" alt="夏至">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_11_-_Lesser_Heat.webp" alt="小暑">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_12_-_Greater_Heat.webp" alt="大暑">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_13_-_Start_of_Autumn.webp" alt="立秋">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_14_-_End_of_Heat.webp" alt="处暑">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_15_-_White_Dew.webp" alt="白露">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_16_-_Autumn_Equinox.webp" alt="秋分">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_17_-_Cold_Dew.webp" alt="寒露">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_18_-_Frost_Descends.webp" class="霜降">
+              </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_19_-_Start_of_Winter.webp" alt="立冬">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_20_-_Lesser_Snow.webp" alt="小雪">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_21_-_Greater_Snow.webp" alt="大雪">
+            </figure>
+        
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_22_-_Winter_Solstice.webp" alt="冬至">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_23_-_Lesser_Cold.webp" alt="小寒">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_24_-_Greater_Cold.webp" alt="大寒">
+            </figure>
+          </div>
+          <div class="gallery-href">
+            <a href="https://luoxiaohei.fandom.com/wiki/Category:Official_art" class="link link-c  ">更多资讯请跳转至wiki。</a>
+          </div>
+
+        </div>
+    </section>
+    </div>
+
+    <!-- 轮播图部分 -->
+<div class="carousel-modal" id="carouselModal">
+  <button class="carousel-close" id="closeCarousel">&times;</button>
+<div class="carousel-container">
+ <div class="carousel-slide active">
+                <img src="img/2017_Solar_Term_1_-_Start_of_Spring.webp" alt="立春">
+                <div class="carousel-caption">立春</div>
+            </div>
+<div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_2_-_Rain_Water.webp" alt="雨水">
+                <div class="carousel-caption">雨水</div>
+
+            </div>
+  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_3_-_Awakening_of_Insects.webp" alt="惊蛰">
+                <div class="carousel-caption">惊蛰</div> 
+            </div>
+ <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_4_-_Spring_Equinox.webp" alt="春分">
+                <div class="carousel-caption">春分</div> 
+            </div>
+            <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_4_-_Spring_Equinox.webp" alt="春分">
+                <div class="carousel-caption">春分</div> 
+            </div>
+               <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_5_-_Clear_and_Bright.webp" alt="清明">
+                <div class="carousel-caption">清明</div> 
+            </div>
+                 <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_6_-_Grain_Rain.webp" alt="谷雨">
+                <div class="carousel-caption">谷雨</div> 
+            </div>
+                    <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_7_-_Start_of_Summer.webp" alt="立夏">
+                <div class="carousel-caption">立夏</div> 
+            </div>
+                        <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_8_-_Lesser_Fullness_of_Grain.webp" alt="小满">
+                <div class="carousel-caption">小满</div> 
+            </div>
+                 <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_9_-_Grain_in_Ear.webp" alt="芒种">
+                <div class="carousel-caption">芒种</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_10_-_Summer_Solstice.webp" alt="夏至">
+
+                <div class="carousel-caption">夏至</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_11_-_Lesser_Heat.webp" alt="小暑">
+                <div class="carousel-caption">小暑</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_12_-_Greater_Heat.webp" alt="大暑">
+
+                <div class="carousel-caption">大暑</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_13_-_Start_of_Autumn.webp" alt="立秋">
+
+                <div class="carousel-caption">立秋</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_14_-_End_of_Heat.webp" alt="处暑">
+                <div class="carousel-caption">处暑</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_15_-_White_Dew.webp" alt="白露">
+
+                <div class="carousel-caption">白露</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_16_-_Autumn_Equinox.webp" alt="秋分">
+
+                <div class="carousel-caption">秋分</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_17_-_Cold_Dew.webp" alt="寒露">
+
+                <div class="carousel-caption">寒露</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_18_-_Frost_Descends.webp" class="霜降">
+
+                <div class="carousel-caption">霜降</div> 
+            </div>
+                  <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_19_-_Start_of_Winter.webp" alt="立冬">
+                <div class="carousel-caption">立冬</div> 
+            </div>
+           <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_20_-_Lesser_Snow.webp" alt="小雪">
+                <div class="carousel-caption">小雪</div> 
+            </div>
+                   <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_21_-_Greater_Snow.webp" alt="大雪">
+
+                <div class="carousel-caption">大雪</div> 
+            </div>
+                   <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_23_-_Lesser_Cold.webp" alt="小寒">
+                <div class="carousel-caption">小寒</div> 
+            </div>
+                   <div class="carousel-slide ">
+              <img src="img/2017_Solar_Term_24_-_Greater_Cold.webp" alt="大寒">
+                <div class="carousel-caption">大寒</div> 
+            </div>
+         <button class="carousel-control prev" id="prevSlide">&#10094;</button>
+        <button class="carousel-control next" id="nextSlide">&#10095;</button>
+        <div class="carousel-indicators" id="carouselIndicators">
+            <!-- 指示器将由JS动态生成 -->
+            
+</div>
+</div>
+
+</div>
+
+<!-- Ionicons 图标 -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+
+
+
+          <footer class="footer">
+        <div class="section-container grid grid--footer">
+            <div class="logo-col">
+                <a href="#" class="footer-logo">
+                    <img class="logo " alt="罗小黑战记logo" src="logo/Logo.webp" />
+                </a>
+                <ul class="social-links">
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-android"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-tiktok"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-wechat"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    Copyright &copy; 2025 by 罗小黑战记,LFF All rights reserved.
+                </p>
+            </div>
+
+            <div class="address-col">
+                <p class="footer-heading">联系我们</p>
+                <address class="contacts">
+                    <p class="address">妖灵会馆总部</p>
+                    <p class="address">资料均选自罗小黑维基和百度，如有错误请联系指出，感谢纠正指导。 </p>
+                    <p>
+                        <a class="footer-link" href="tel:415-201-6370">+86 101 101 1011</a><br />
+                        <a class="footer-link" href="mailto:hello@luo-xiaohei.com">hello@luo-xiaohei.com</a>
+                    </p>
+                </address>
+            </div>
+          
+        </div>
+    </footer>
+
+
+
+
+
+    </body>
+
+
+     </html>
+     

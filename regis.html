@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/general.css" rel="stylesheet" />
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/regis.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <script src="js/script.js" defer></script>
+
+    <title>罗小黑战记论坛 - 登录注册</title>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="img/2017_Solar_Term_7_-_Start_of_Summer-modified.png"
+        class="logo"
+        alt="Hei"
+      />
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="index.html" class="nav-link">首页</a></li>
+          <li><a href="people.html" class="nav-link">人物简介</a></li>
+          <li><a href="media.html" class="nav-link">媒体资源</a></li>
+          <li><a href="gallery.html" class="nav-link">图画艺术</a></li>
+          <li id="auth-item">
+            <!-- 这里会根据登录状态动态显示 -->
+            <a href="#" class="nav-link nav-cta" id="auth-link">登录</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-info hidden" id="user-info">
+        <div class="user-avatar" id="user-avatar"></div>
+        <span id="user-name"></span>
+        <a href="#" id="logout-link" class="subheading">退出</a>
+      </div>
+    </header>
+
+    <div class="background-img"></div>
+    <div class="form-containers">
+      <div class="form-container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <!-- 注册表单 -->
+            <div id="register-form">
+              <h2 class="heading-secondary">加入妖灵会馆</h2>
+              <p class="cta-text">
+                五湖四海，知己难得。我们一起探索罗小黑的世界，祝您玩得开心！😊
+              </p>
+
+              <form class="cta-form" id="register-form-elements">
+                <div class="form-group">
+                  <label for="full-name">姓名</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="小黑"
+                    required
+                  />
+                  <div class="error-message" id="name-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">邮箱</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                  <div class="error-message" id="email-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="password">密码</label>
+                  <input
+                    id="password"
+                    type="password"
+                    placeholder="至少6位字符"
+                    required
+                  />
+                  <div class="error-message" id="password-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="select-where">您从哪里了解到我们？</label>
+                  <select id="select-where" required>
+                    <option value="">请选择一个选项</option>
+                    <option value="friends">亲友</option>
+                    <option value="youtube">B站</option>
+                    <option value="podcast">小红书</option>
+                    <option value="ad">广告</option>
+                    <option value="others">其他</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form" type="submit">注册</button>
+              </form>
+
+              <div class="form-switch">
+                已有账号？<a id="show-login">立即登录</a>
+              </div>
+            </div>
+
+            <!-- 登录表单 -->
+            <div id="login-form" class="hidden">
+              <h2 class="heading-secondary">欢迎登录</h2>
+              <p class="cta-text">很高兴再次见到您！😊</p>
+
+              <form class="cta-form" id="login-form-elements">
+                <div class="form-group">
+                  <label for="login-email">邮箱</label>
+                  <input
+                    id="login-email"
+                    type="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                  <div class="error-message" id="login-email-error"></div>
+                </div>
+
+                <div class="form-group">
+                  <label for="login-password">密码</label>
+                  <input
+                    id="login-password"
+                    type="password"
+                    placeholder="请输入密码"
+                    required
+                  />
+                  <div class="error-message" id="login-password-error"></div>
+                </div>
+
+                <button class="btn btn--form" type="submit">登录</button>
+              </form>
+
+              <div class="form-switch">
+                还没有账号？<a id="show-register">立即注册</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cta-img-box"
+            role="img"
+            aria-label="罗小黑,The legend of Hei"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="section-container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="罗小黑战记logo" src="logo/Logo.webp" />
+          </a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-android"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-tiktok"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="#">
+                <ion-icon class="social-icon" name="logo-wechat"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; 2025 by 罗小黑战记,LFF All rights reserved.
+          </p>
+        </div>
+
+        <div class="address-col">
+          <p class="footer-heading">联系我们</p>
+          <address class="contacts">
+            <p class="address">妖灵会馆总部</p>
+            <p class="address">
+              资料均选自罗小黑维基和百度，如有错误请联系指出，感谢纠正指导。
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">+86 101 101 1011</a
+              ><br />
+              <a class="footer-link" href="mailto:hello@luo-xiaohei.com"
+                >hello@luo-xiaohei.com</a
+              >
+            </p>
+          </address>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

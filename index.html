@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+
+
+<link>
+ <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+     <!--链接css文件和html文件-->
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/gallery.css" rel="stylesheet"/>
+    <link href="../css/general.css"rel="stylesheet"/>
+    <link href="../css/media.css" rel="stylesheet"/>
+    <link href="../css/regis.css" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <script src="js/script.js" defer ></script>
+
+
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>罗小黑战记(The legend of Hei)</title>
+</head>
+<body>
+
+<!--导航栏-->
+<header class="header ">
+      <img src="img/2017_Solar_Term_7_-_Start_of_Summer-modified.png" class="logo" alt="Hei" />
+      <nav class="main-nav">
+        <ul class=" main-nav-list   ">
+          <li><a href="index.html" class="nav-link">首页</a></li>
+          <li><a href="people.html" class="nav-link">人物简介</a></li>
+          <li><a href="media.html" class="nav-link">媒体资源</a></li>
+          <li><a href="gallery.html"       class="nav-link">图画艺术</a></li>
+            <li id="auth-item">
+            <!-- 这里会根据登录状态动态显示 -->
+            <a href="regis.html" class="nav-link nav-cta" id="auth-link">登录</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-info hidden" id="user-info">
+        <div class="user-avatar" id="user-avatar"></div>
+        <span id="user-name"></span>
+        <a href="#" id="logout-link" class="subheading">退出</a>
+
+      </div>
+    </header>
+    
+
+       <section class="hero-section">
+        <div class="hero ">
+         <div class="hero-text-box">
+            <h1 class="heading-primary text-c">罗小黑战记论坛！</h1>
+
+           <h1 class="heading-tertiary">剧情简介</h1>
+           <p class="hero-description"> 
+             罗小黑不是一只普通的猫咪，它极通人性，会蹲马桶，不吃猫粮，长长的尾巴甚至能分裂成多个名为“黑咻”的生物体。
+             另一方面，谛听发动手下三匹长着翅膀的狼，搜寻着罗小黑的下落。
+             不久，罗小白带着小黑到乡下探望堂哥阿根和爷爷，由此发生了种种离奇玄幻事件。
+                故事就这样开始了………            </p>
+          <div class="LXHimgs">
+            <div class="lxh-imgs">
+              <img src="img/2017_Solar_Term_7_-_Start_of_Summer-modified.png" class="img" alt="LXH" />
+              <img src="img/2017_Solar_Term_1_-_Start_of_Spring-modified.png" class="img" alt="LXH" />
+              <img src="img/2017_Solar_Term_11_-_Lesser_Heat-modified.png" class="img" alt="LXH" />
+              <img src="img/2017_Solar_Term_6_-_Grain_Rain-modified.png" class="img" alt="LXH" />
+              <img src="img/2017_Solar_Term_3_-_Awakening_of_Insects-modified.png" class="img" alt="LXH" />
+              <img src="img/2017_Solar_Term_15_-_White_Dew-modified.png" class="img" alt="LXH" />
+            </div>
+            <p class="lxh-text"> <span>360,000+</span>人已观看且好评！</p>
+          </div>
+          </div>
+
+          <div class="hero-img-box">
+            <img src="character/Allcharacters.webp" class="hero-img" alt="罗小黑战记海报" />
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="section-featured" >
+          <h2 class="heading-featured"> 中国动画，精益求精</h2>
+          <div class="logos">
+            <img src="img/2017_Solar_Term_11_-_Lesser_Heat-modified.png" class="featured-logo" alt="Hei photo" />
+            <img src="img/2017_Solar_Term_15_-_White_Dew-modified.png" class="featured-logo" alt="Hei photo" />
+            <img src="img/2017_Solar_Term_1_-_Start_of_Spring-modified.png" class="featured-logo" alt="Hei photo" />
+            <img src="img/2017_Solar_Term_3_-_Awakening_of_Insects-modified.png" class="featured-logo" alt="Hei photo" />
+
+          </div>
+      </section>
+
+
+      <section class="section-how " id="section1">
+                    <div class="section-container">
+
+          <span class="subheading">世界观设定</span>
+          <h2 class="heading-secondary  heading-aside">灵与妖的世界</h2>
+
+        <!--step01-->
+        <div class=" grid grid--2--cols  grid-center-v">
+
+          <div class="step-text-box">
+            <p class="step-number"> 01</p>
+            <h3 class="heading-secondary heading-aside">
+              灵
+            </h3>
+            <p class="step-description">
+             肉眼无法看见，无处不在，分为物质灵与生灵。
+             生命体使用灵的方式由先天特性决定。 
+             人类与自然灵质的联系较弱，
+             在现代已经基本丧失了与自然灵质的联系。（无限是个例外）
+            </p>
+          </div>
+
+          <!--step02-->
+          <div class="step-img-box">
+            <img src="poster/Movie_Promotional_Poster_2.webp"
+            class="step-img"
+            alt="罗小黑战记1海报"/>
+          </div>
+
+           <!--step03-->
+          <div class="step-img-box">
+            <img src="img/罗小黑战记3.webp"
+            class="罗小黑战记2海报"
+            alt="apps on phone"/>
+          </div>
+
+          <!--step04-->
+          <div class="step-text-box">
+            <p class="step-number"> 02</p>
+            <h3 class="heading-secondary heading-aside">
+              妖精
+            </h3>
+            <p class="step-description">
+             生灵自己汇聚成为没有实体的精灵，
+             精灵在不断吸收不断变化过程中与物质灵结合，
+             演变为不同程度的实体，就是妖精。 妖精都有自己的本体，
+             只是妖精会为了方便融入人类世界去修人形。
+            </p>
+          </div>
+
+
+          <!--step05-->
+          <div class="step-text-box">
+            <p class="step-number"> 03</p>
+            <h3 class="heading-secondary  heading-aside">
+            灵质空间
+            </h3>
+            <p class="step-description">
+             每个生命体都有属于自己的灵质空间，
+             是储存灵的地方，控制灵质的关键。 
+             在灵质空间内，空间的主人相当于神明，掌控一切，
+             甚至能够控制进入空间的人或妖精的精神。
+            </p>
+          </div>
+
+          <!--step06-->
+           <div class="step-img-box">
+            <img src="img/The_Legend_of_Luoxiaohei_2021_cover.webp"
+            class="step-img"
+            alt="apps on phone"/>
+          </div>
+          </div>
+        </div>
+
+        </section>
+
+
+        <!-- 世界观设定 -->
+        <section class="section-meals margin-buttom-md" id="section2">
+          <div class="section-container">
+            <div class=" center-text">
+              <span class="subheading">主要人物</span>
+              <h2 class="heading-secondary">罗小黑战记主要人物介绍 </h2>
+            </div>
+          </div>
+
+          <div class=" section-container  grid grid--3-cols">
+            <div class="meals">  
+              <img class="meal-img"
+            src="character/Luo_Xiaohei_Profile4.webp"
+          alt="meal" />
+
+          <div class="meal-content">
+
+            <span class=" tag tag--vegetarian">妖精</span>
+            <p class="meal-title">小黑</p>
+
+ <ul class="meal-attributes">
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="paw-outline"></ion-icon>
+                            <span>黑色猫妖</span>
+                        </li>
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="flash-outline"></ion-icon>
+                            <span>控制"领域"</span>
+                        </li>
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                            <span>御金能力</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="meals">
+                <img src="character/Wuxian_Profile_1.webp" class="meal-img" alt="无限" />
+                <div class="meal-content">
+                    <span class="tag tag--vegan">人类</span>
+                    <p class="meal-title">无限</p>
+                    <ul class="meal-attributes">
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="body-outline"></ion-icon>
+                            <span>最强执行者</span>
+                        </li>
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="flash-outline"></ion-icon>
+                            <span>金属控制</span>
+                        </li>
+                        <li class="meal-attribute">
+                            <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                            <span>“吞”（空间系能力）</span>
+                        </li>
+                    </ul>
+
+          </div>
+        </div>
+
+  
+          <div class="list">
+            <h3 class="heading-tertiary">其他人物</h3>
+            <ul class="meal-lists">
+              <li class="meal-list">风息--木系妖精</li>
+              <li class="meal-list">哪吒--神仙</li>
+              <li class="meal-list">鹿野--师姐</li>
+              <li class="meal-list">阿根--小白的堂哥</li>
+              <li class="meal-list">小白--人类女孩</li>
+              <li class="meal-list">老君--神仙</li>
+              <li class="meal-list">玄离--狗哥</li>
+              <li class="meal-list">清凝--治愈系</li>
+              <li class="meal-list">谛听--地府神兽</li>
+            </ul>
+          </div>
+          </div>
+
+
+          
+          <div class=" all-recipes">
+            <a href="people.html" class="link ">查看所有角色&rArr;</a>
+          </div>
+        </section>
+        <!-- 好评部分 -->
+      <section class=" section-test" id="section3">
+           <div class="test-container">
+
+             <span class="subheading">好评如潮</span>
+             <h2 class="heading-secondary head-top">为什么我们如此喜欢小黑 </h2>
+             
+             <div class="tests">
+               <figure class="test">
+                 <img src="img/2017_Solar_Term_11_-_Lesser_Heat-modified.png"  class="test-img" alt="customer-1-photo"/>
+                 <blockquote class="test-text">
+                  罗小黑真的是一部很好的作品，
+                  它展现了（人/妖）的多面性让我们看见
+                  世界不是非黑即白的。
+                  </blockquote>
+                  <p class="test-name">&mdash; 豆瓣用户</p>
+                </figure>
+                
+                <figure class="test">
+                  <img src="img/2017_Solar_Term_6_-_Grain_Rain-modified.png"  class="test-img" alt="customer-1-photo"/>
+                  <blockquote class="test-text">
+                    与乍一看质朴呆萌的画风不同，
+                    《罗小黑战记》试图探讨的主题并不幼稚
+                    ——人类与妖怪的共存与对立。
+                  </blockquote>
+                  <p class="test-name">&mdash;新华网评 </p>
+                </figure>
+                
+                
+                <figure class="test">
+                  <img src="img/2017_Solar_Term_7_-_Start_of_Summer-modified.png"  class="test-img" alt="customer-1-photo"/>
+                  <blockquote class="test-text">
+                    趁着过年又N刷了一遍罗小黑，看完之后感觉浮躁的心平静下来一些，
+                    一个词形容罗小黑的话，我感觉就是"温馨"。
+                  </blockquote>
+                  <p class="test-name">&mdash; B站用户</p>
+                </figure>
+                
+                <figure class="test">
+                  <img src="img/2017_Solar_Term_1_-_Start_of_Spring-modified.png"  class="test-img" alt="customer-1-photo"/>
+                  <blockquote class="test-text">
+                    好喜欢无限，作为人类成仙之路漫漫，
+                    阅尽千帆之后淡泊平静，绝对的实力下是爱与包容。
+                  </blockquote>
+                  <p class="test-name">&mdash; 微博用户</p>
+                </div>
+          </figure>
+        </div>
+
+
+     <div class="gallery  gallery-items grid grid--4--cols">
+            <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_1_-_Start_of_Spring.webp" alt="2017_Solar_Term_1_-_Start_of_Spring">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_2_-_Rain_Water.webp" alt="2017_Solar_Term_2_-_Rain_Water">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_3_-_Awakening_of_Insects.webp" alt="2017_Solar_Term_1_-_Insects">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_4_-_Spring_Equinox.webp" alt="2017_Solar_Term_1_-_Equinox">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_5_-_Clear_and_Bright.webp" alt="2017_Solar_Term_1_-_Bright">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_6_-_Grain_Rain.webp" alt="2017_Solar_Term_1_-_Rain">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_7_-_Start_of_Summer.webp" alt="2017_Solar_Term_1_-_Summer">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_8_-_Lesser_Fullness_of_Grain.webp" alt="2017_Solar_Term_1_-_Grain">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_9_-_Grain_in_Ear.webp" alt="2017_Solar_Term_1_-_Start_of_Grain-Ear">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_10_-_Summer_Solstice.webp" alt="2017_Solar_Term_10_-_Summer_Solstice">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_11_-_Lesser_Heat.webp" alt="2017_Solar_Term_11_-_Lesser_Heat">
+            </figure>
+             <figure class="gallery-item">
+              <img src="img/2017_Solar_Term_12_-_Greater_Heat.webp" alt="2017_Solar_Term_12_-_Greater_Heat">
+            </figure>
+           
+          </div>
+       
+        </section>
+
+
+<!-- 资源部分 -->
+        <section class="section-price" id="section3">
+          <div class="section-container">
+            <div>
+            <span class="subheading">媒体资源</span>
+            <h2 class="heading-secondary">罗小黑系列作品等你探索！</h2>
+          </div>
+
+          <div class=" grid grid--2--cols margin-bottom-md">
+            <div class="pricing-plan pricing-plan--starter">
+              <header class="plan-header">
+                <p class="plan-name">动画</p>
+                <p class="plan-price"><ion-icon class="yuan" name="play-circle-outline">
+                  <a href="https://www.bilibili.com/bangumi/play/ep32374?spm_id_from=333.337.0.0"></a>
+                </ion-icon>40集</p>
+                <p class="plan-text">2011年至今持续更新</p>
+              </header>
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                  <span>每集5-15分钟</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                  <span>B站独家播放</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                  <span>豆瓣评分9.6</span>
+                </li>
+             
+              </ul>
+              <div class="plan-sing-up">
+                <a href="https://www.bilibili.com/bangumi/play/ep32374?spm_id_from=333.337.0.0" class="btn btn--full">立即观看</a>
+              </div>
+            </div>
+            <div class="pricing-plan pricing-plan--complete">
+              <header class="plan-header">
+                <p class="plan-name">电影</p>
+                <p class="plan-price"><ion-icon class="yuan" name="film-outline">
+                </ion-icon>2部</p>
+                <p class="plan-text">动画电影</p>
+              </header>
+              <ul class="list">
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="checkmark-outline">
+      
+                  </ion-icon>
+                  <span>《罗小黑战记》2019</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                  <span>《罗小黑战记Ⅱ》2025</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                  <span>日本院线同步上映</span>
+                </li>
+                <li class="list-item">
+                  <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+                  <span>金鸡奖提名</span>
+                </li>
+              </ul>
+              <div class="plan-sing-up">
+                <a href="https://search.bilibili.com/all?vt=51596141&keyword=%E7%BD%97%E5%B0%8F%E9%BB%91%E6%88%98%E8%AE%B0&from_source=webtop_search&spm_id_from=333.1007&search_source=2" class="btn btn--full">查看详情</a>
+              </div>
+            </div>
+          </div>
+          <div class=" grid">
+            <aside class="plan-details">
+    
+              还有外传漫画《蓝溪镇》讲述战争年代的老君、清凝和玄离等人的故事。
+            </aside>
+          </div>
+          <div class=" grid grid--4--cols">
+            <div class="feature">
+              <ion-icon class="feature-icon" name="book-outline"></ion-icon>
+              <p class="feature-title">漫画</p>
+              <p class="feature-text">
+                外传漫画《蓝溪镇》深入讲述老君、清凝和玄离的故事。
+              </p>
+            </div>
+            <div class="feature">
+              <ion-icon class="feature-icon" name="color-palette-outline"></ion-icon>
+              <p class="feature-title">艺术设定</p>
+              <p class="feature-text">
+                丰富的角色设定和场景原画，展现独特的美学风格。
+              </p>
+            </div>
+            <div class="feature">
+              <ion-icon class="feature-icon" name="musical-notes-outline"></ion-icon>
+              <p class="feature-title">原声音乐</p>
+              <p class="feature-text">
+                优美的原声配乐，增强观影体验，营造独特氛围。
+              </p>
+            </div>
+            <div class="feature">
+              <ion-icon class="feature-icon" name="people-outline"></ion-icon>
+              <p class="feature-title">同人创作</p>
+              <p class="feature-text">
+                活跃的粉丝社区，创作大量同人作品和二次创作。
+              </p>
+            </div>
+          </div>
+        </div>
+        </section>
+        
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <footer class="footer">
+        <div class="section-container grid grid--footer">
+            <div class="logo-col">
+                <a href="#" class="footer-logo">
+                    <img class="logo " alt="罗小黑战记logo" src="logo/Logo.webp" />
+                </a>
+                <ul class="social-links">
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-android"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-tiktok"></ion-icon>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="footer-link" href="#">
+                            <ion-icon class="social-icon" name="logo-wechat"></ion-icon>
+                        </a>
+                    </li>
+                </ul>
+                <p class="copyright">
+                    Copyright &copy; 2025 by 罗小黑战记,LFF All rights reserved.
+                </p>
+            </div>
+
+            <div class="address-col">
+                <p class="footer-heading">联系我们</p>
+                <address class="contacts">
+                    <p class="address">妖灵会馆总部</p>
+                    <p class="address">资料均选自罗小黑维基和百度，如有错误请联系指出，感谢纠正指导。 </p>
+                    <p>
+                        <a class="footer-link" href="tel:415-201-6370">+86 101 101 1011</a><br />
+                        <a class="footer-link" href="mailto:hello@luo-xiaohei.com">hello@luo-xiaohei.com</a>
+                    </p>
+                </address>
+            </div>
+          
+        </div>
+    </footer>
+
+    
+
+    
+    </div>
+      
+</body>
+
+
+</html>
+

@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: forestgreen;
+  --primary-light: #7cc47c;
+  --primary-dark: #0d6b0d;
+  --text-dark: #2e4e3e;
+  --background-light: #f1f8f1;
+  --accent-color: #ffd43b;
+}
+.background-img {
+  position: fixed;
+
+  width: 100%;
+  height: 120%;
+  background: url("../img/Concert_2022.webp") no-repeat center center/cover;
+
+  z-index: -1;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Microsoft YaHei, sans-serif;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #555;
+}
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 4.8rem;
+}
+.grid--2--cols {
+  grid-template-columns: 1fr 1fr;
+}
+.grid--4--cols {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 2.2rem auto;
+  padding: 3.2rem 0;
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--footer {
+  grid-template-columns: 1fr 2fr;
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+/*在背景图上面放置文本框*/
+/* Footer */
+.footer {
+  position: relative;
+  height: 30rem;
+  margin-top: 4.8rem;
+  border-top: 1px solid #eee;
+  z-index: 100;
+  background-color: white;
+}
+.form-containers {
+  /* 表单居中 */
+  display: flex;
+}
+.container {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%); */
+
+  flex: 1;
+  margin-top: 6rem; /* 等于导航栏高度 */
+  margin-bottom: 10rem; /* 等于页脚高度 */
+  padding: 3.2rem;
+  overflow-y: auto; /* 确保内容过多时可滚动 */
+}
+
+.form-container {
+  margin: auto;
+  background: linear-gradient(
+    to right bottom,
+    var(--primary-light),
+    var(--primary-color)
+  );
+  border-radius: 11px;
+  max-width: 80rem;
+  /* 居中布局
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+/* 左右布局容器 */
+.flex-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 130px); /* 确保内容区高度足够 */
+}
+.container-l {
+  /* position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -30%); */
+  flex: 0 0 20rem;
+  border-radius: 11px;
+}
+.container-r {
+  /* position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -20%); */
+  flex: 1; /* 自适应剩余宽度 */
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 11px;
+}
+
+/* hero部分 */
+.section-container {
+  padding: 0 9.6rem;
+  margin-bottom: 9.6rem;
+}
+/* .section-container:last-child {
+  margin-bottom: 3.2rem;
+} */
+
+/***文字**/
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.2;
+  color: var(--text-dark);
+  margin-bottom: 3.2rem;
+}
+.heading-aside {
+  text-align: left;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-dark);
+  margin-bottom: 4.4rem;
+}
+.heading-tertiary {
+  font-size: 3.6rem;
+  line-height: 1.2;
+  color: var(--text-dark);
+
+  margin: 2.2rem;
+}
+.subheading {
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin: 1.6rem auto;
+  letter-spacing: 0.75px;
+}
+.head-top {
+  margin-bottom: 2.2rem;
+}
+strong {
+  font-weight: 500;
+}
+.text-c {
+  text-align: center;
+}
+.gallery-href {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+
+/**btn*/
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  text-decoration: none;
+  border-radius: 11px;
+  color: inherit;
+  transition: all 0.3s;
+
+  border: none;
+  cursor: pointer;
+}
+
+/*link*/
+/*链接部分*/
+.link:visited,
+.link:link {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #333;
+  display: inline-block;
+  /*删除原有的下划线，不美观*/
+  text-decoration: none;
+  /*设置下划线的部分*/
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: var(--primary-dark);
+}
+
+/* 列表部分 */
+.list {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  font-size: 2rem;
+  font-weight: 500;
+}
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: var(--primary-color);
+}
+* :focus {
+  outline: none;
+  box-shadow: inset 0 0 0 0.8rem rgba(34, 139, 34, 0.673);
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 6.4rem;
+}
+
+/*表单部分  */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-weight: bold;
+}
